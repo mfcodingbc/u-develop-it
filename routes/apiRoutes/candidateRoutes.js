@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../../db/connection');
 // needs the error check file to confirm proper inputs received
-const inputCheck = require('./utils/inputCheck');
+const inputCheck = require('../../utils/inputCheck');
 
 // GET all candidates
 router.get('/candidates', (req, res) => {
